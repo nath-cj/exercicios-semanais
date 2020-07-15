@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08/07/2020 manhã</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var nota1 = parseInt (prompt("Digite a primeira nota"));
+    var nota2 = parseInt ( prompt("Digite a a segunda nota"));
+    var nota3 = parseInt ( prompt ("Digite a terceira nota"));
+    const pularLinha = '<br>';
+
+    if (isNaN(nota1)){
+    nota1 = 0;
+    }
+    
+    if (isNaN(nota2)){
+    nota2 = 0;
+    }
+    
+    if (isNaN(nota3)){
+    nota3 = 0;
+    }
+
+    var soma = ( nota1 + nota2 + nota3);
+    var media = (soma /3 );
+
+    document.write ( " Sua primeira nota é " + nota1 + pularLinha);
+    document.write ( " Sua segunda nota é " + nota2 + pularLinha);
+    document.write ( " Sua terceira nota é " + nota3 + pularLinha);
+   
+    document.write ( " A soma das suas notas é " + soma + pularLinha);
+    document.write ( " Sua média é " + media + pularLinha);
+
+if ( soma < 60){
+    document.write ('<h1 style = " color: red; ">  Reprovado <\h1> ');
+}else{
+    document.write('<h2 style =  " color: green; "> Aprovado  <\h2> ');
+}
+
+
+</script>
+</html>

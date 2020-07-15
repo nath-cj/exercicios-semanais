@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+var num1 = parseInt (prompt ( " Digite o número que você deseja que seja multiplicado" ));
+var ate = parseInt ( prompt( " Digite até o número que você deseja multiplicar "));
+var cont = 0;
+
+while( cont <= ate){
+    document.write ( num1 + " x " + cont + " = " + num1* cont  +  '<br>');
+
+    if ( (num1*cont) % 2 == 0){
+        document.write (" O número que você digitou é par" + '<br>');
+
+    } else{
+         document.write (" O número que você digitou é impar" + '<br>');
+    }
+    cont++;
+    '<br>'
+}
+
+
+
+</script>
+</html>
